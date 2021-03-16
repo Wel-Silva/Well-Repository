@@ -17,7 +17,7 @@ if(a == 0 || b == 0)
     result = 0; 
 else result = 1;
 if (result == 1) not = 0;
-if (result == 1 && not == 0)xor = 0;
+if ((a || b) && !(a && b));
 
 
 
@@ -25,5 +25,5 @@ if (result == 1 && not == 0)xor = 0;
 printf("A and B: %d\n", result);
 printf("A or B: %d\n", result);
 printf("A xor B: %d\n", xor);
-printf("A not B: %d\n", not);
+printf("A not B: %d\n", (a || b) && !(a && b));
 }
