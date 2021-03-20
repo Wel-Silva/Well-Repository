@@ -1,26 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 
 int main(){
 
-    int vetor [ 2 ];
+int vet[6] ;
 
+printf("<< Listando um vetor >>\n");
 
+printf("Entre com o número 1: ");
+scanf("%d", &vet[0]);
 
-    printf("Entre com o numero 1: ");
-    scanf("%d", &vetor[0]);
-    printf("\nEntre com o numero 2: ");
-    scanf("%d", &vetor[1]);
-  //  printf("Entre com o número 3: ");
-   // int vetor[2] = 4;
-  //  printf("Entre com o número 4: ");
-   // int vetor[3] = 0;
-  //  printf("Entre com o número 5: ");
-   // int vetor[4] = 3;
-  //  printf("Entre com o número 6: ");
-  //  int vetor[5] = 6;
-    
-    printf("\nOs valores lidos sao: %d %d ", vetor[0], vetor[1]);
-    
+printf("Entre com o número 2: ");
+scanf("%d", &vet[1]);
+
+printf("Entre com o número 3: ");
+scanf("%d", &vet[2]);
+
+printf("Entre com o número 4: ");
+scanf("%d", &vet[3]);
+
+printf("Entre com o número 5: ");
+scanf("%d", &vet[4]);
+
+printf("Entre com o número 6: ");
+scanf("%d", &vet[5]);
+
+    printf("Os valores lidos sao: %d %d %d %d %d %d",vet[0],vet[1],vet[2],vet[3],vet[4],vet[5]);
+
 }
