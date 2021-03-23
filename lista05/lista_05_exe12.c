@@ -29,9 +29,21 @@ int main(){
     
     printf("\nProbabilidades");
     printf("\nVerde: %.1f%%", pv);
+    if(pv > paz && pv > pam && pv > pve){
+        printf("<< Maior probabilidade");
+    }
     printf("\nAzul: %.1f%%", paz);
+    if(paz > pv && paz > pam && paz > pve){
+        printf("<< Maior probabilidade");
+    }
     printf("\nAmarelo: %.1f%%", pam);
+    if(pam > paz && pam > pv && pam > pve){
+        printf("<< Maior probabilidade");
+    }
     printf("\nVermelha: %.1f%%", pve);
+    if(pve > paz && pve > pam && pve > pv){
+        printf(" << Maior probabilidade");
+    }
     
 
 }
