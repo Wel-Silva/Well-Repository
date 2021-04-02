@@ -4,7 +4,7 @@
 
 int main(){
     int i, x, numeros[8];
-    int r = 0;
+    int r = 0, repete;
     
     printf("<< Valores iguais >>\n");
 
@@ -12,12 +12,21 @@ int main(){
         printf("Entre com o numero %d: ", i+1);
         scanf("%d", &numeros[i]);
     }
-      for(i = 0; i < 8; i++){
-        for(x =i+1; x < 8; x++){
+
+
+    printf("Valores repetidos: ");
+    for(i = 0; i < 8; i++){
+        repete = 0;
+        for(x = 0; x < 8; x++){
             if(numeros[i] == numeros[x]){
-                printf("%d ", numeros[i]);
+                if(x < i){
+                    break;
+                }
+                repete++;
             }
         }
+        if(repete > 1) printf("%d ", numeros[i]);
+
     }
         
 }
